@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+
+<head>
+    <title>Шанувальники Пива - Святкування Пивоваріння</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <link rel="stylesheet" href="assets/css/slider-pro.min.css" />
+    <script src="assets/js/jquery.sliderPro.min.js"></script>
+</head>
+
+<body class="is-preload bg-light text-dark">
+    <script>
+        $(document).ready(function () {
+            $('#my-slider').sliderPro({
+                imageScaleMode: 'contain',
+                width: '100%',
+                arrows: true,
+                buttons: false,
+                waitForLayers: true,
+                autoplay: true,
+                centerImage: true,
+                loop: true,
+                aspectRatio: 3,
+                allowScaleDown: true,
+                autoWidth: true,
+                centerSelectedSlide: true
+            });
+        });
+    </script>
+    <!-- Обгортка -->
+    <div id="wrapper">
+        <!-- Заголовок -->
+        <header id="header" class="alt py-3 bg-dark text-white">
+            <div class="container">
+                <h1 class="text-center">Шанувальники Пива</h1>
+                <p class="text-center">Святкування Пивоваріння</p>
+            </div>
+        </header>
+
+        <!-- Банер -->
+        <section id="banner" class="major py-5">
+            <div class="container text-center">
+                <header class="major">
+                    <h1>Вивчайте Мистецтво Пивоваріння</h1>
+                </header>
+                <div class="content">
+                    <p>Від крафтового елю до традиційного лагера, пориньте у світ пива та технік пивоваріння.</p>
+                    <a href="#one" class="btn btn-primary mt-3">Дізнатися більше</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Основний контент -->
+        <div id="main" class="container py-5">
+            <!-- Слайдер -->
+            <section id="slider" class="mb-5">
+                <div class="slider-pro" id="my-slider">
+                    <div class="sp-slides">
+                        <div class="sp-slide">
+                            <img src="images/1.jpg" alt="Крафтовий Ель" />
+                        </div>
+                        <div class="sp-slide">
+                            <img src="images/2.jpg" alt="Традиційний Лагер" />
+                        </div>
+                        <div class="sp-slide">
+                            <img src="images/3.jpg" alt="Сезонні Напої" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Плитки -->
+            <section id="one" class="row">
+                <article class="col-md-4 mb-4">
+                    <img src="images/4.jpg" class="img-fluid rounded" alt="Історія Пива" />
+                    <h3 class="mt-3">Історія Пива</h3>
+                    <p>Дізнайтеся про стародавні витоки пивоваріння та як пиво вплинуло на цивілізації.</p>
+                </article>
+                <article class="col-md-4 mb-4">
+                    <img src="images/5.jpg" class="img-fluid rounded" alt="Техніки Пивоваріння" />
+                    <h3 class="mt-3">Техніки Пивоваріння</h3>
+                    <p>Дізнайтеся про традиційні та сучасні методи, що використовуються в пивоварінні.</p>
+                </article>
+                <article class="col-md-4 mb-4">
+                    <img src="images/6.avif" class="img-fluid rounded" alt="Поєднання з Їжею" />
+                    <h3 class="mt-3">Поєднання з Їжею</h3>
+                    <p>Знайдіть ідеальне поєднання страв, які доповнять ваші улюблені сорти пива.</p>
+                </article>
+            </section>
+        </div>
+
+        <!-- Футер -->
+        <footer id="footer" class="py-3 bg-dark text-white">
+            <div class="container text-center">
+                <p>&copy; 2024 Шанувальники Пива. Усі права захищено.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
